@@ -31,14 +31,16 @@
       />
       <div class="card__image">
         <img
+          id="mobile"
+          class="img__desktop"
           src="./images/illustration-woman-online-desktop.svg"
           alt="woman online desktop"
         />
-        <!-- <img
-            class="img__mobile"
-            src="./images/illustration-woman-online-mobile.svg"
-            alt="woman online mobile"
-          /> -->
+        <img
+          class="img__mobile"
+          src="./images/illustration-woman-online-mobile.svg"
+          alt="woman online mobile"
+        />
       </div>
 
       <div class="card__text">
@@ -75,7 +77,7 @@
           <div class="accordion__line">
             <!-- question -->
 
-            <button class="accordion__question">
+            <button class="accordion__question" onmouseover="changeColor(this)"" onmouseout="changeColor(this)">
               How do I reset my password?
             </button>
 

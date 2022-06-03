@@ -54,7 +54,7 @@ h3 {
 }
 .card__image img {
   position: absolute;
-  top: -6.5rem;
+  top: 3.5rem;
   left: 50%;
   transform: translateX(-50%);
   display: block;
@@ -112,7 +112,7 @@ h3 {
 .accordion__question:focus,
 .accordion__question:focus-visible {
   border: none;
-  outline: dashed 1px hsl(240, 6%, 50%);
+  outline: none;
 }
 .accordion__question.open {
   font-weight: 700;
@@ -146,6 +146,14 @@ h3 {
   display: block;
 }
 
+.accordion__question:hover {
+  color: #f47c57;
+}
+
+.img__desktop {
+  display: none;
+}
+
 @media (min-width: 62.5em) {
   body {
     padding: 5rem;
@@ -177,15 +185,12 @@ h3 {
     flex-direction: column;
     padding-top: 0;
   }
-  .img__mobile {
-    display: none;
-  }
 
   .card__box {
     display: block;
     position: absolute;
-    left: 0;
-    top: 57%;
+    left: -93px;
+    top: 40%;
     z-index: 10;
   }
 
@@ -194,5 +199,9 @@ h3 {
     top: auto;
     transform: translateX(-17rem);
     max-width: 25rem;
+  }
+
+  img.img__mobile {
+    display: none;
   }
 }
