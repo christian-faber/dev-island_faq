@@ -37,19 +37,30 @@ h1 {
   text-align: center;
   font-size: 32px;
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
+  text-transform: uppercase;
 }
 
 .card {
   background: white;
   border-radius: 2rem;
-  max-width: 902px;
-  padding: 2.875rem 1.5rem;
+  max-width: 920px;
+  padding: 2.875rem 1.5rem 4rem;
   background-image: url("../images/bg-pattern-mobile.svg");
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 15rem;
 }
+
+/* AJ coding */
+/* .card::before {
+  content: "";
+  height: 150px;
+  width: 198px;
+  position: absolute;
+  background-image: url(../images/illustration-woman-online-mobile.svg)
+    no-repeat;
+} */
 
 .card__box {
   display: none;
@@ -100,7 +111,7 @@ h1 {
 .accordion__answer {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 0.75rem;
-  line-height: 1.4;
+  line-height: 1.8;
 }
 
 .accordion__question::after {
@@ -153,7 +164,7 @@ h1 {
 
 @media (min-width: 62.5em) {
   body {
-    padding: 9% 13%% 9% 13%;
+    padding: 9% 13% 9% 13%;
   }
 
   h1 {
@@ -165,7 +176,7 @@ h1 {
     display: flex;
     height: 66.2%;
     margin: 0 auto;
-    padding: 4.375rem 6.25rem 4.375rem 0;
+    padding: 4.375rem 10% 4.375rem 0;
     background-image: url("../images/bg-pattern-desktop.svg");
     background-size: 45%;
     background-repeat: no-repeat;
@@ -212,5 +223,11 @@ h1 {
 
   .accordion__question:hover {
     color: #f47c57;
+  }
+}
+
+@media (min-width: 920px) {
+  .card {
+    margin: auto;
   }
 }
